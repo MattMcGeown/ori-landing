@@ -24,7 +24,7 @@ const Navbar = ({ logo, links }) => {
 
 	return (
 		<div className={styles.navbar}>
-			<h3 className={styles.logo}>{logo}</h3>
+			<img src={logo.default.src} width={60} className={styles.logo}></img>
 			<ul className={`${isOpen ? styles.menu_open : styles.menu_links}`}>
 				{links.map((link, i) => (
 					<li
