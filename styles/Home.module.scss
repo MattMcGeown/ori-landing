@@ -1,0 +1,16 @@
+@import './includes/mixins';
+
+.home_wrapper {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+
+	.nav_wrapper {
+		width: 100%;
+		background: deeppink;
+
+		.container {
+			@include container-w;
+		}
+	}
+}

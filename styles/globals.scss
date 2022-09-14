@@ -1,0 +1,13 @@
+@import './includes/reset';
+@import './includes/variables';
+@import './includes/typography';
+
+@media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
+	}
+	body {
+		color: rgba(var(--text-primary));
+		background: black;
+	}
+}
