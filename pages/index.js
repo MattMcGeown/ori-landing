@@ -9,6 +9,7 @@ import styles from '../styles/Home.module.scss';
 
 // Data imports
 import { navItems } from '../data/index';
+import Header from '../components/Header';
 
 export default function Home() {
 	return (
@@ -24,6 +25,12 @@ export default function Home() {
 					<Navbar logo={navItems.logo} links={navItems.links} />
 				</div>
 			</nav>
+
+			<main className={styles.main}>
+				<header className={styles.header}>
+					<Header />
+				</header>
+			</main>
 		</div>
 	);
 }
