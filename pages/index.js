@@ -3,13 +3,13 @@ import Head from 'next/head';
 
 // Component imports
 import Navbar from '../components/Navbar';
+import Header from '../components/Header';
 
 // Style imports
 import styles from '../styles/Home.module.scss';
 
 // Data imports
-import { navItems } from '../data/index';
-import Header from '../components/Header';
+import { navData, headerData, buttonData } from '../data/index';
 
 export default function Home() {
 	return (
@@ -22,13 +22,19 @@ export default function Home() {
 
 			<nav className={styles.nav_wrapper}>
 				<div className={styles.container}>
-					<Navbar logo={navItems.logo} links={navItems.links} />
+					<Navbar logo={navData.logo} links={navData.links} />
 				</div>
 			</nav>
 
 			<main className={styles.main}>
 				<header className={styles.header}>
-					<Header />
+					<div className={styles.container}>
+						<Header
+							title={headerData.title}
+							body={headerData.body}
+							images={headerData.images}
+						/>
+					</div>
 				</header>
 			</main>
 		</div>
