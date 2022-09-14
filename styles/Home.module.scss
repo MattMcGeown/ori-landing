@@ -1,5 +1,9 @@
 @import './includes/mixins';
 
+.container {
+	@include container-w;
+}
+
 .home_wrapper {
 	width: 100vw;
 	height: 100vh;
@@ -7,9 +11,5 @@
 
 	.nav_wrapper {
 		width: 100%;
-
-		.container {
-			@include container-w;
-		}
 	}
 }
